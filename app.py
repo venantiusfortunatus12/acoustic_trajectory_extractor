@@ -260,7 +260,7 @@ st.caption("FPCA-ready F0, intensity, and formant trajectories — Seongwoo Kang
 
 st.markdown(
     "Upload paired audio and TextGrid files. Files are matched by filename "
-    "(case-insensitive), and every interval is sampled at **100 normalized points**."
+    "(case-insensitive), and every interval is sampled at **100 normalised points**."
 )
 st.info(
     "Unvoiced F0 remains missing (NaN), while `voiced` is coded as 0/1. "
@@ -295,7 +295,7 @@ time_step_ms = st.sidebar.number_input(
 )
 keep_empty = st.sidebar.checkbox("Keep empty intervals", value=False)
 st.sidebar.number_input(
-    "Normalized points per interval",
+    "Normalised points per interval",
     min_value=100,
     max_value=100,
     value=100,
